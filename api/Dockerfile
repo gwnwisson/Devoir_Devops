@@ -4,4 +4,4 @@ COPY package.json .
 RUN npm install
 COPY . .
 EXPOSE 1994
-CMD ["node", "src/index.js"]
+CMD ["npm", "start"]

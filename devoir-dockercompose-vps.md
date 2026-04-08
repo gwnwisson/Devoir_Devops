@@ -26,21 +26,24 @@ Un fichier markdown explique rapidement les étapes à suivre pour dockeriser et
 Pour tester l'API, il faut lancer le service avec `npm start` dans le dossier `api` ou `npm run dev`. L'API écoute sur le port 1994 et répond à une route GET `/` avec un message de bienvenue.
 
 - [ ] **Dockerfile API & .dockerignore** (2 pt)
-  - [ ] Image de base Node.js, WORKDIR, copie stratégique, CMD défini
-  - [ ] .dockerignore créé
+  - [X] Image de base Node.js, WORKDIR, copie stratégique, CMD défini
+  - [X] .dockerignore créé
 
 - [ ] **Test local** (2 pt)
-  - [ ] Renseigner les commandes pour construire et lancer l'API en local
-  - [ ] L'API répond en local
+  - [X] Renseigner les commandes pour construire et lancer l'API en local
+  - [X] L'API répond en local
 
 - [ ] **En prod** (2 pts)
-  - [ ] L'image Docker de l'API est poussée sur Docker Hub
-  - [ ] L'API est accessible en ligne via Render manuellement
+  - [X] L'image Docker de l'API est poussée sur Docker Hub
+  - [X] L'API est accessible en ligne via Render manuellement
 
 Indiquer les commandes utilisées ici (ou README.md) :
+- Pour lancer l'API en local : "npm start" puis dans le navigateur : localhost:1994 et se lance correctement ("bravo les champions !")
 - Dans API, j'ai crée un dossier "DockerFile". J'ai mis le script, ajusté le port ainsi que le RUN et le CMD. 
 - J'ai crée un dossier .gitignore afin de filtrer les fichiers à ne pas copier.
 - Et j'ai exécuté la commande "docker build . -t devoir_devops" -> Le devoir apparaît dans le docker
+- Pour pousser l'image sur DockerHub : "docker build . -t gwensws/devoir_devops" puis "docker push gwensws/devoir_devops"
+- Dans Render, j'ai crée un nouveau projet (web service) dans lequel j'ai ajouté "gwensws/devoir_devops"
 
 ---
 
