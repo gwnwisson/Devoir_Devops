@@ -38,9 +38,9 @@ Pour tester l'API, il faut lancer le service avec `npm start` dans le dossier `a
   - [ ] L'API est accessible en ligne via Render manuellement
 
 Indiquer les commandes utilisées ici (ou README.md) :
-- 
-- 
-- 
+- Dans API, j'ai crée un dossier "DockerFile". J'ai mis le script, ajusté le port ainsi que le RUN et le CMD. 
+- J'ai crée un dossier .gitignore afin de filtrer les fichiers à ne pas copier.
+- Et j'ai exécuté la commande "docker build . -t devoir_devops" -> Le devoir apparaît dans le docker
 
 ---
 
